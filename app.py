@@ -46,7 +46,8 @@ class Catalogo:
             descripcion VARCHAR(255) NOT NULL,
             cantidad INT NOT NULL,
             precio DECIMAL(10, 2) NOT NULL,
-            imagen_url VARCHAR(255)''')
+            imagen_url VARCHAR(255),
+            proveedo VARCHAR(255)''')
         self.conn.commit()
 
         # Cerrar el cursor inicial y abrir uno nuevo con el parámetro dictionary=True
