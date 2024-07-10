@@ -58,7 +58,7 @@
         let descripcion = '';
         let cantidad = '';
         let precio = '';
-        let proveedor = '';
+        // let proveedor = '';
         let imagen_url = '';
         let imagenSeleccionada = null;
         let imagenUrlTemp = null;
@@ -98,7 +98,7 @@
                 document.getElementById('descripcionModificar').value = descripcion;
                 document.getElementById('cantidadModificar').value = cantidad;
                 document.getElementById('precioModificar').value = precio;
-                document.getElementById('proveModificar').value = proveedor;
+                // document.getElementById('proveModificar').value = proveedor;
 
                 const imagenActual = document.getElementById('imagen-actual');
                 if (imagen_url && !imagenSeleccionada) {
@@ -131,7 +131,7 @@
             formData.append('codigo', codigo);
             formData.append('descripcion', document.getElementById('descripcionModificar').value);
             formData.append('cantidad', document.getElementById('cantidadModificar').value);
-            formData.append('proveedor', document.getElementById('proveModificar').value);
+            // formData.append('proveedor', document.getElementById('proveModificar').value);
             formData.append('precio', document.getElementById('precioModificar').value);
 
             if (imagenSeleccionada) {
@@ -164,7 +164,7 @@
             document.getElementById('descripcionModificar').value = '';
             document.getElementById('cantidadModificar').value = '';
             document.getElementById('precioModificar').value = '';
-            document.getElementById('proveModificar').value = '';
+            // document.getElementById('proveModificar').value = '';
             document.getElementById('nuevaImagen').value = '';
 
             const imagenActual = document.getElementById('imagen-actual');
@@ -177,7 +177,7 @@
             descripcion = '';
             cantidad = '';
             precio = '';
-            proveedor = '';
+            // proveedor = '';
             imagen_url = '';
             imagenSeleccionada = null;
             imagenUrlTemp = null;
