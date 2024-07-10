@@ -23,7 +23,7 @@
                 <th>Cantidad</th>                
                 <th align="right">Precio</th>
                 <th>Imagen</th>
-                <th align="right">Proveedor</th>
+                <th align="right">Material</th>
             </tr>
         </thead>
         <tbody id="tablaProductos"> </tbody>
@@ -53,8 +53,7 @@
                         '<td>' + producto.descripcion + '</td>' +
                         '<td align="right">' + producto.cantidad + '</td>' +
                         '<td align="right">' + producto.precio + '</td>' +
-                        '<td><img src=https://www.pythonanywhere.com/user/Tiagos84/files/home/Tiagos84/mysite/static/imagenes/' + producto.imagen_url +' alt="Imagen del producto" style="width: 100px;"></td>' // producto.proveedor + '<td align="right">' +  + '</td>';
-                    
+                        '<td><img src=https://www.pythonanywhere.com/user/Tiagos84/files/home/Tiagos84/mysite/static/imagenes/' + producto.imagen_url +' alt="Imagen del producto" style="width: 100px;"></td>' + producto.proveedor + '<td align="right">' + '</td>';
                     tablaProductos.appendChild(fila);
                 }
             })
